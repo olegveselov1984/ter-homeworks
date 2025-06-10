@@ -130,7 +130,8 @@ Code lines for this resource are too many. Please use IDE of your choice to revi
 Перед исправлением в checkov
 ![image](https://github.com/user-attachments/assets/cc9e42c2-eb17-4f8b-9e6f-83ff669bae14)
 после внесения изменений
-![image](https://github.com/user-attachments/assets/fca20bf7-d693-46cb-a992-e51320558181)
+![image](https://github.com/user-attachments/assets/8d811990-3b85-4419-a8e3-c92ec1da5d06)
+
 
 
 4. Откройте новый pull request 'terraform-hotfix' --> 'terraform-05'. 
