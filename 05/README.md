@@ -125,13 +125,17 @@ Code lines for this resource are too many. Please use IDE of your choice to revi
 
 
 2. Проверье код с помощью tflint и checkov, исправьте все предупреждения и ошибки в 'terraform-hotfix', сделайте коммит.
+После исправления в tflint
 ![image](https://github.com/user-attachments/assets/78a6837f-3957-4cba-a70e-7c6d507802ef)
+Перед исправлением в checkov
+![image](https://github.com/user-attachments/assets/cc9e42c2-eb17-4f8b-9e6f-83ff669bae14)
+после внесения изменений
+![image](https://github.com/user-attachments/assets/fca20bf7-d693-46cb-a992-e51320558181)
 
 
-
-3. Откройте новый pull request 'terraform-hotfix' --> 'terraform-05'. 
-4. Вставьте в комментарий PR результат анализа tflint и checkov, план изменений инфраструктуры из вывода команды terraform plan.
-5. Пришлите ссылку на PR для ревью. Вливать код в 'terraform-05' не нужно.
+4. Откройте новый pull request 'terraform-hotfix' --> 'terraform-05'. 
+5. Вставьте в комментарий PR результат анализа tflint и checkov, план изменений инфраструктуры из вывода команды terraform plan.
+6. Пришлите ссылку на PR для ревью. Вливать код в 'terraform-05' не нужно.
 
 ------
 ### Задание 4
