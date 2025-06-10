@@ -115,7 +115,20 @@ Code lines for this resource are too many. Please use IDE of your choice to revi
 ### Задание 3  
 
 1. Сделайте в GitHub из ветки 'terraform-05' новую ветку 'terraform-hotfix'.
+создал через вэб интерфейс
+![image](https://github.com/user-attachments/assets/c59ad3df-4474-4189-9dda-22de43275aa4)
+переключился в консоли
+![image](https://github.com/user-attachments/assets/a123fba4-0468-4bf5-bbae-b114117f48fa)
+
+
+
+
+
 2. Проверье код с помощью tflint и checkov, исправьте все предупреждения и ошибки в 'terraform-hotfix', сделайте коммит.
+![image](https://github.com/user-attachments/assets/78a6837f-3957-4cba-a70e-7c6d507802ef)
+
+
+
 3. Откройте новый pull request 'terraform-hotfix' --> 'terraform-05'. 
 4. Вставьте в комментарий PR результат анализа tflint и checkov, план изменений инфраструктуры из вывода команды terraform plan.
 5. Пришлите ссылку на PR для ревью. Вливать код в 'terraform-05' не нужно.
