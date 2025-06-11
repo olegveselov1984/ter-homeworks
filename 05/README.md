@@ -126,6 +126,10 @@ terraform force-unlock 947d0352-a729-ffdb-28b4-f44af80e33b3
 5. Вставьте в комментарий PR результат анализа tflint и checkov, план изменений инфраструктуры из вывода команды terraform plan.
 6. Пришлите ссылку на PR для ревью. Вливать код в 'terraform-05' не нужно.
 
+https://github.com/olegveselov1984/ter-homeworks/pull/2
+
+
+
 ------
 ### Задание 4
 
