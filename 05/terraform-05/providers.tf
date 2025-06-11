@@ -5,8 +5,40 @@ terraform {
     }
   }
   required_version = ">1.8.4"
-}
 
+backend "s3" {
+    
+    shared_credentials_files = ["~/.aws/credentials"]
+    shared_config_files = [ "~/.aws/config" ]
+    profile = "default"
+    region="ru-central1"
+
+    bucket     = "backet-olov" #FIO-netology-tfstate
+    key = "production/terraform.tfstate"
+    
+
+    # access_key                  = "..."          #Только для примера! Не хардкодим секретные данные!
+    # secret_key                  = "..."          #Только для   примера! Не хардкодим секретные данные!
+# cat ~/.aws/config 
+# [default]
+# region=ru-central1
+# cat ~/.aws/credentials 
+# [default]
+# aws_access_key_id = YCAJEK...  !!!!!!!!!!!!!!!
+# aws_secret_access_key = YCMBzZ3...!!!!!!!!!!!!!!!!!!imenno tak!!!!!!!!!!!
+    skip_region_validation      = true
+    skip_credentials_validation = true
+    skip_requesting_account_id  = true # Необходимая опция Terraform для версии 1.6.1 и старше.
+    skip_s3_checksum            = true # Необходимая опция при описании бэкенда для Terraform версии 1.6.3 и старше.
+
+  endpoints ={
+    dynamodb = "https://docapi.serverless.yandexcloud.net/ru-central1/b1g8fa5kgacq5ib1h509/etn1n22dejkau8ch6hee"
+    s3 = "https://storage.yandexcloud.net"
+  }
+
+    dynamodb_table              = "tfstate-lock-develop-olov"
+  }
+}
 # provider "yandex" {
 #   # token                    = "do not use!!!"
 #   cloud_id                 = "b1gn3ndpua1j6jaabf79"
