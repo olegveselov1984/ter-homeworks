@@ -18,7 +18,7 @@ backend "s3" {
     key = "production/terraform.tfstate"
     
 
-    # access_key                  = "..."          #Только для примера! Не хардкодим секретные данные!
+    # access_key                  = "..."          #Только для  примера! Не хардкодим секретные данные!
     # secret_key                  = "..."          #Только для примера! Не хардкодим секретные данные!
 # cat ~/.aws/config 
 # [default]
