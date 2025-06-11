@@ -37,7 +37,7 @@ TFLINT каталог vms и src. Дубли удалил:
 
 main.tf:22:20: Warning - Module source "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main" uses a default branch as ref (main) (terraform_module_pinned_source)
 
-ссылка на верку main без указания версионности. Может сломаться при изменении версии
+Ссылка на верку main без указания версионности. Может сломаться при изменении версии
 
 providers.tf:3:14: Warning - Missing version constraint for provider "yandex" in `required_providers` (terraform_required_providers)
 
@@ -45,15 +45,15 @@ providers.tf:3:14: Warning - Missing version constraint for provider "yandex" in
 
 variables.tf:50:1: Warning - variable "vm_db_name" is declared but not used (terraform_unused_declarations)
 
-переменная заявлена но не используется
+Переменная заявлена но не используется
 
 Check: CKV_TF_2: "Ensure Terraform module sources use a tag with a version number"
 
-не указана версия. Может сломаться при изменении версии		
+Не указана версия. Может сломаться при изменении версии		
 
 Check: CKV_TF_1: "Ensure Terraform module sources use a commit hash"
 
-необходимо указать URL Git с хэшем фиксации	
+Необходимо указать URL Git с хэшем фиксации	
 
 Code lines for this resource are too many. Please use IDE of your choice to review the file.
 
@@ -96,7 +96,7 @@ Code lines for this resource are too many. Please use IDE of your choice to revi
 5. Откройте в проекте terraform console, а в другом окне из этой же директории попробуйте запустить terraform apply.
 6. Пришлите ответ об ошибке доступа к state.
 7. Принудительно разблокируйте state. Пришлите команду и вывод.
-
+terraform force-unlock 947d0352-a729-ffdb-28b4-f44af80e33b3
 
 ------
 ### Задание 3  
