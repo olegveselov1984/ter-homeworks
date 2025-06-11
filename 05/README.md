@@ -134,7 +134,20 @@ https://github.com/olegveselov1984/ter-homeworks/pull/2
 1. Напишите переменные с валидацией и протестируйте их, заполнив default верными и неверными значениями. Предоставьте скриншоты проверок из terraform console. 
 
 - type=string, description="ip-адрес" — проверка, что значение переменной содержит верный IP-адрес с помощью функций cidrhost() или regex(). Тесты:  "192.168.0.1" и "1920.1680.0.1";
+
+![image](https://github.com/user-attachments/assets/611c846e-52ff-46da-88d6-a3458da5000d)
+
+![image](https://github.com/user-attachments/assets/02648d6c-6eed-4556-87f0-20ccff98905f)
+
+
 - type=list(string), description="список ip-адресов" — проверка, что все адреса верны. Тесты:  ["192.168.0.1", "1.1.1.1", "127.0.0.1"] и ["192.168.0.1", "1.1.1.1", "1270.0.0.1"].
+
+![image](https://github.com/user-attachments/assets/c30647ed-00d1-4f03-ab74-b178a18bcb47)
+
+![image](https://github.com/user-attachments/assets/0eec0438-d641-4cc4-b47a-d1b01ac89a28)
+
+
+
 
 ## Дополнительные задания (со звёздочкой*)
 
