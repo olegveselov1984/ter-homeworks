@@ -31,30 +31,9 @@
 - из [ДЗ к лекции 4](https://github.com/netology-code/ter-homeworks/tree/main/04/src),
 - из [демо к лекции 4](https://github.com/netology-code/ter-homeworks/tree/main/04/demonstration1).
 2. Проверьте код с помощью tflint и checkov. Вам не нужно инициализировать этот проект.
-При создании файла .tflint.hcl и указании там кода (вывод информации более сжатый):
-_________________________________________________________
-tflint {
-  required_version = ">= 0.50"
-}
 
-config {
-  format = "compact"
-  plugin_dir = "~/.tflint.d/plugins"
-  call_module_type = "local"
-}
 
-# plugin "aws" {
-#   enabled = true
-#   version = "0.4.0"
-#   source  = "github.com/terraform-linters/tflint-ruleset-aws"
-# }
-
-rule "terraform_required_version" {
-  enabled = false
-}
-_________________________________________________________
-
-TFLINT каталог vms и src. Дудли удалил.
+TFLINT каталог vms и src. Дубли удалил:
 
 main.tf:22:20: Warning - Module source "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main" uses a default branch as ref (main) (terraform_module_pinned_source)
 ссылка на верку main без указания версионности. Может сломаться при изменении версии
