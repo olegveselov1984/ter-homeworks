@@ -96,6 +96,7 @@ Code lines for this resource are too many. Please use IDE of your choice to revi
 5. Откройте в проекте terraform console, а в другом окне из этой же директории попробуйте запустить terraform apply.
 6. Пришлите ответ об ошибке доступа к state.
 7. Принудительно разблокируйте state. Пришлите команду и вывод.
+
 terraform force-unlock 947d0352-a729-ffdb-28b4-f44af80e33b3
 
 ------
