@@ -21,14 +21,13 @@ module "vpc-dev" {
 module "test-vm" {
   source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
   network_id     = module.vpc-dev.network_id 
-#  network_id     = yandex_vpc_network.develop.id
   subnet_zones   = ["ru-central1-a","ru-central1-b"]
-  subnet_ids     = [module.vpc-dev.subnet_id] #,yandex_vpc_subnet.develop_b.id
-  #subnet_ids     = [yandex_vpc_subnet.develop_a.id] #,yandex_vpc_subnet.develop_b.id
+  subnet_ids     = [module.vpc-dev.subnet_id] 
   instance_name  = "marketing"
   instance_count = 1
   image_family   = "ubuntu-2004-lts"
   public_ip      = true
+
   
 
    labels = { 
